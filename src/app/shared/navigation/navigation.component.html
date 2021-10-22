@@ -1,0 +1,42 @@
+<div class="sidebar hidden-sm-down">
+    <ul class="nav in" id="side-menu">
+        <li *ngFor="let nav of navigationList"><a [routerLink]="nav.route" [routerLinkActive]="['active']" class="waves-effect"><i [ngClass]="nav.icon"></i><span
+            class="hide-menu">{{nav.name}}</span></a></li>
+        <!-- <li><a [routerLink]="['/city']" [routerLinkActive]="['active']" class="waves-effect"><i class="fa fa-home"></i> <span
+                class="hide-menu">City</span></a></li> -->
+        <!-- <li class=""><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-envelope-o"></i> <span
+                class="hide-menu"> Mailbox <span class="fa arrow"></span><span
+                class="label label-rouded label-danger pull-right">6</span></span></a>
+        </li> -->
+        <!-- <li>
+            <a [routerLink]="['/suburb']" [routerLinkActive]="['active']">
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">Suburb</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/car']" [routerLinkActive]="['active']">
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">Car</span>
+            </a>
+        </li> -->
+        <!-- <li>
+            <a [routerLink]="['/ui-elements']" [routerLinkActive]="['active']">
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">UI Elements</span>
+            </a>
+        </li>
+        <li>
+            <a  [routerLink]="['/forms']" [routerLinkActive]="['active']">
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">Form</span>
+            </a>
+        </li>
+        <li>
+            <a  [routerLink]="['/tables']" [routerLinkActive]="['active']">
+                <i class="fa fa-bars"></i>
+                <span class="hide-menu">Tables</span>
+            </a>
+        </li> -->
+    </ul>
+</div>
